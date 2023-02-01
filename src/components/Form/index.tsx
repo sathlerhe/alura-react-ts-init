@@ -1,11 +1,11 @@
-// import { Container } from './styles';
-
 import Button from "../Button";
+
+import "./style.scss";
 
 const Form: React.FC = () => {
   return (
-    <form>
-      <div>
+    <form className="novaTarefa">
+      <div className="inputContainer">
         <label htmlFor="task">Adicione um novo estudo</label>
         <input
           required
@@ -16,7 +16,7 @@ const Form: React.FC = () => {
         />
       </div>
 
-      <div>
+      <div className="inputContainer">
         <label htmlFor="Time">Tempo</label>
         <input
           type="time"

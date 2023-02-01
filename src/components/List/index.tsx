@@ -1,4 +1,4 @@
-// import { Container } from './styles';
+import'./style.scss';
 
 const List: React.FC = () => {
   const tasks = [
@@ -17,11 +17,11 @@ const List: React.FC = () => {
   ];
 
   return (
-    <aside>
+    <aside className='listaTarefas'>
       <h2>Estudos do dia</h2>
       <ul>
         {tasks?.map((task) => (
-          <li key={task.task}>
+          <li key={task.task} className="item">
             <h3>{task.task}</h3>
             <span>{task.time}</span>
           </li>

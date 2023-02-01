@@ -1,4 +1,4 @@
-// import { Container } from './styles';
+import './style.scss';
 
 const Button: React.FC = () => {
   return (
